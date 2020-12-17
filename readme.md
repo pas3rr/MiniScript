@@ -12,7 +12,7 @@ Miniscript for detecting solarwind sunburst vulnerbilities using favicon and che
 git clone https://github.com/pas3rr/MiniScript
 ```
 ```
-cd Solarwind
+cd MiniScript/Solarwind
 ```
 ```
 pip3 install -r requirements.txt
