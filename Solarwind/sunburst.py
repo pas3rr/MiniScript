@@ -61,7 +61,7 @@ def verify_version(url):
 				if success and false_positive == None:
 					print(f"{spacing}(Critical){url} is vulnerable")
 				else:
-					print(f"{spacing}(Critical){url} is not vulnerable")
+					print(f"{spacing}(Fail){url} is not vulnerable")
 
 		except Exception as e:
 			print(e)
