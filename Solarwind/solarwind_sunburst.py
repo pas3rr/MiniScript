@@ -1,5 +1,6 @@
 #pip3 install pypac
 #pip3 install pymmh3
+#special thanks to Devansh batham on his favicon osint techniques
 
 import pymmh3 as mmh3 #we are using pure python implementation of mmh3 
 from multiprocessing.pool import ThreadPool
@@ -28,11 +29,12 @@ spacing = "    "
 def display_banner():
 	banner_text = '''
 
-  	Minimal Tool for detecting SolarWind Sunburst
+  	MiniScript for detecting SolarWind Sunburst
 
   	developer: JT 
   	github: https://github.com/pas3rr
 	'''
+
 	print(f"{banner_text}")
 
 
