@@ -7,7 +7,7 @@ MiniScript aims for a quick deployable python script on vulnerbilities detection
 # MiniScript-Solarwind
 Miniscript for detecting solarwind sunburst vulnerbilities using favicon and check their version
 
-### Installation
+### Installation and Usage
 ```
 git clone https://github.com/pas3rr/MiniScript
 ```
@@ -21,6 +21,7 @@ You need to create a url.txt with sample URL http://127.0.0.1
 ```
 touch url.txt
 ```
+using for sunburst vulnerbilities
 ```
 python3 sunburst.py
 ```
