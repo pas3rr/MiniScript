@@ -10,3 +10,16 @@ Miniscript for detecting solarwind sunburst vulnerbilities using favicon and che
 ```
 git clone https://github.com/pas3rr/MiniScript
 ```
+```
+cd Solarwind
+```
+```
+pip3 install -r requirements.txt
+```
+You need to create a url.txt with sample URL http://127.0.0.1
+```
+touch url.txt
+```
+```
+python3 sunburst.py
+```
