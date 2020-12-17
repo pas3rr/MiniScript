@@ -59,10 +59,9 @@ def verify_version(url):
 				success = re.search(i, r.text)
 				false_positive = re.search("2020.2.1", r.text)
 				if success and false_positive == None:
-					print(f"{spacing}(Critical){url} is vulnerable")
+					print(f"{spacing}(Critical) {url} is vulnerable to version: {i}")
 				else:
-					print(f"{spacing}(Fail){url} is not vulnerable")
-
+					print(f"{spacing}(Fail) {url} does not contain vulnerable version: {i}")
 		except Exception as e:
 			print(e)
 
@@ -99,7 +98,7 @@ def main():
 		# check for the keys in a with Signature keys
 		if i in Signature.keys():
 			#print out Signature total hits 
-			print(f"{Signature[i]} {str(i)} Total Hit: {str(len(a[i]))}")
+			print(f"{Signature[i]} {str(i)} Total URLs to test: {str(len(a[i]))}")
 			#if there is a hash value in a.[i] 
 			#(a[i]) is a list of urls
 			if len(a[i]) > 0:
