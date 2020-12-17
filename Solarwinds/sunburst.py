@@ -28,7 +28,7 @@ spacing = "    "
 def display_banner():
 	banner_text = '''
 
-  	MiniScript for detecting SolarWind Sunburst
+  	MiniScript for detecting Solarwinds Sunburst
 
   	developer: JT 
   	github: https://github.com/pas3rr
