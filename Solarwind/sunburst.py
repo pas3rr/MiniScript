@@ -1,7 +1,6 @@
 #pip3 install pypac
 #pip3 install pymmh3
 #special thanks to Devansh batham on his favicon osint techniques
-
 import pymmh3 as mmh3 #we are using pure python implementation of mmh3 
 from multiprocessing.pool import ThreadPool
 from time import time as timer
@@ -61,6 +60,8 @@ def verify_version(url):
 				false_positive = re.search("2020.2.1", r.text)
 				if success and false_positive == None:
 					print(f"{spacing}(Critical){url} is vulnerable")
+				else:
+					print(f"{spacing}(Critical){url} is not vulnerable")
 
 		except Exception as e:
 			print(e)
