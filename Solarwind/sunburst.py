@@ -43,7 +43,6 @@ def get_request(url):
 		favicon = codecs.encode(r.content,"base64")
 		hash = mmh3.hash(favicon)
 		key = hash
-		#set the key to a dict, with optional value as list
 		a.setdefault(key, [])
 		a[key].append(url)
 		return url, hash, None
@@ -93,18 +92,11 @@ def main():
 	#debug Signature keys
 	#print(Signature.keys())
 
-	# for each of the keys in a 
 	for i in a.keys():
-		# check for the keys in a with Signature keys
 		if i in Signature.keys():
-			#print out Signature total hits 
 			print(f"{Signature[i]} {str(i)} Total URLs to test: {str(len(a[i]))}")
-			#if there is a hash value in a.[i] 
-			#(a[i]) is a list of urls
 			if len(a[i]) > 0:
-				#for url in a.[i]
 				for url in a[i]:
-					#for each of the success url, we check for the version
 					url = f"{url[:-12]}"
 					print(f"{spacing}{url}")
 					verify_version(url)
